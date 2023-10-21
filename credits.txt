@@ -1,0 +1,8 @@
+Components
+NaiveUi
+
+Images
+Freepik
+
+Icons
+xicons

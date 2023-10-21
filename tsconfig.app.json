@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "files": [
+    "src/services/contact.ts",
+    "src/services/shipping-enterprises.ts",
+  ],
+  "include": [
+    "vite-env.d.ts", "src/**/*", "src/**/*.vue", "src/.....shims-vue.vue.d.ts"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "vite-env.d.ts"],
+  "files": [
+    "vite-env.d.ts",
+    "src/services/contact.ts",
+    "src/services/shipping-enterprises.ts",
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom"]
+  }
+}
