@@ -28,7 +28,7 @@
             <div class="col">
                 <div>
                     <h2>Endereço</h2>
-                    <p>Rua Santa Margarida, 180, Vila paraíso</p>
+                    <p>Rua Santa Margarida, 180, Vila paraíso, Guarulhos, SP</p>
                 </div>
             </div>
             <div class="col">

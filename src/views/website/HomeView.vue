@@ -62,7 +62,7 @@
         <div class="price">
             <h3>Tudo isso por apenas</h3>
             <h4>R$ 2.349,00</h4>
-            <p>Aceitamos pagamentos via <b>PIX</b>, <b>boleto</b> e <b>dinheiro a vista</b>.</p>
+            <p>Aceitamos pagamentos via <b>PIX</b> e <b>dinheiro a vista</b>.</p>
             <p>Aceitamos todos os <b>cartões</b> de crédito e débito e <b>parcelamos</b> em até <b>12x</b>.</p>
             <p>Fazemos <b>entrega</b> na região de SP e grande SP.</p>
         </div>

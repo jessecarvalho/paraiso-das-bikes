@@ -774,7 +774,7 @@ a.button button svg{
     text-align: center;
 }
 #advantages .row .col svg {
-    margin: auto;
+    margin: 0 auto;
     width: fit-content;
     font-size: 50px;
     fill: #fff;
