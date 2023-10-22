@@ -4,7 +4,7 @@
         Compre sua
         <span>BICICLETA MOTORIZADA</span>
         hoje no Paraíso das Bikes
-        <a href="/motorizadas" target="_blank" >
+        <a href="#store" class="button">
             <button>Saiba Mais</button>
         </a>
     </h2>

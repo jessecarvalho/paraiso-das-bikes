@@ -34,6 +34,10 @@ INDICE
     --section-margin: 100px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -167,12 +171,24 @@ footer img {
 
 footer .row {
     display: grid;
-    grid-template-columns: 25% 15% 30% 30%;
+    grid-template-columns: 20% 25% 25% 30%;
 }
 
 footer .row .col {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    footer .row .col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .row .col:first-child {
+        align-items: center;
+    }
 }
 
 footer .row .col ul{
@@ -247,17 +263,42 @@ footer #absolute-footer a {
     margin: 0 auto;
     width: fit-content;
 }
-button{
-    border: none;
+a.button {
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    margin: 15px auto 15px;
+}
+a.button.__invert button {
+    background-color: transparent;
+    border: #fff 2px solid;
+}
+a.button button{
     background-color: var(--secondary-color);
     color: #fff;
     padding: 10px 40px;
     border-radius: 7px;
     cursor: pointer;
-    margin: 15px auto 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid transparent;
+}
+a.button button:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+a.button button:hover svg {
+    fill: var(--secondary-color);
+}
+a.button button svg{
+    fill: #fff;
+    font-size: 20px;
 }
 .banner#banner-home {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    background: linear-gradient(to bottom, rgba(225, 131, 53, 0.52), rgba(0, 0, 0, 0.73)),
     url('banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -399,19 +440,15 @@ button{
     color: var(--primary-color);
 }
 
-#mini-banner button {
-    background-color: var(--secondary-color);
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
 
 #mini-banner h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+#mini-banner h2 span.consertos {
+    font-size: 46px;
 }
 
 @media screen and (max-width: 768px) {
@@ -643,6 +680,13 @@ button{
     margin: calc(var(--section-margin) / 2) var(--section-margin);
 }
 
+#construction svg.icon {
+    margin: auto;
+    width: fit-content;
+    font-size: 50px;
+    fill: var(--primary-color);
+}
+
 #bike-construction .row{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -659,7 +703,7 @@ button{
     display: flex;
     flex-direction: column;
 }
-#store svg {
+#store svg.icon {
     margin: auto;
     width: fit-content;
     font-size: 50px;
@@ -680,8 +724,8 @@ button{
 
 #store .row {
     display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
-    gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
 }
 #store .row .col {
     display: flex;
@@ -690,6 +734,19 @@ button{
     width: 100%;
     margin: 0 auto;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #store {
+        width: 90%;
+    }
+    #store .row {
+        display: flex;
+        flex-direction: column;
+    }
+    #store .row .col {
+        margin: 15px 0;
+    }
 }
 
 #advantages {
@@ -706,8 +763,9 @@ button{
 
 #advantages .row {
     display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
-    gap: 15px;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    margin-bottom: 25px;
 }
 #advantages .row .col {
     display: flex;
@@ -735,6 +793,19 @@ button{
     font-size: 17px;
 }
 
+@media screen and (max-width: 768px) {
+    #advantages .box {
+        width: 90%;
+    }
+    #advantages .row {
+        display: flex;
+        flex-direction: column;
+    }
+    #advantages .row .col {
+        margin: 15px 0;
+    }
+}
+
 section#construction {
     width: 80%;
     margin: 50px auto;
@@ -749,6 +820,27 @@ section#construction h2 {
     color: var(--primary-color);
 }
 
+section#construction .price {
+    margin: 30px 0;
+}
+
+section#construction h3 {
+    text-align: center;
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+section#construction h4 {
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+section#construction p {
+    margin: 5px 0;
+}
+
 section#construction p {
     font-weight: 300;
     text-align: center;
@@ -760,7 +852,35 @@ section#construction img {
     margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+    section#construction {
+        width: 95%;
+    }
+    section#construction img {
+        width: 100%;
+    }
+    section#construction h4 {
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+        color: var(--primary-color);
+    }
+    section#construction .price p {
+        font-size: 13px;
+    }
+}
+
 section#localization {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+section#localization .box svg.icon {
+    font-size: 40px;
+    fill: #fff;
+}
+
+section#localization .box {
     width: 80%;
     margin: 50px auto;
     display: flex;
@@ -771,5 +891,18 @@ section#localization h2 {
     text-align: center;
     font-size: 30px;
     margin: 10px 0;
-    color: var(--secondary-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    section#localization .box {
+        width: 95%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#localization .box h2 {
+        font-size: 25px;
+    }
 }
