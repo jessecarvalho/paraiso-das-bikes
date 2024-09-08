@@ -8,8 +8,9 @@ dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: './',
     plugins: [
-        vue(), 
+        vue(),
     ],
     resolve: {
         alias: {
