@@ -10,7 +10,7 @@ import SiteFooter from "../components/website/_shared/TheFooter.vue";
 import NotFoundComponent from "../views/NotFoundComponent.vue";
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
 
         {
@@ -30,6 +30,42 @@ const router = createRouter({
             name: "motorBike",
             components: {
                 default: MotorBikeView,
+                header: SiteHeader,
+                footer: SiteFooter,
+            },
+            meta: {
+                requiresAuth: false,
+            },
+        },
+        {
+            path: "/loja",
+            name: "store",
+            components: {
+                default: StoreView,
+                header: SiteHeader,
+                footer: SiteFooter,
+            },
+            meta: {
+                requiresAuth: false,
+            },
+        },
+        {
+            path: "/produto/:id",
+            name: "product",
+            components: {
+                default: ProductView,
+                header: SiteHeader,
+                footer: SiteFooter,
+            },
+            meta: {
+                requiresAuth: false,
+            },
+        },
+        {
+            path: "/quem-somos",
+            name: "about",
+            components: {
+                default: AboutView,
                 header: SiteHeader,
                 footer: SiteFooter,
             },
