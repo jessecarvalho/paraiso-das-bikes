@@ -38,42 +38,6 @@ const router = createRouter({
             },
         },
         {
-            path: "/loja",
-            name: "store",
-            components: {
-                default: StoreView,
-                header: SiteHeader,
-                footer: SiteFooter,
-            },
-            meta: {
-                requiresAuth: false,
-            },
-        },
-        {
-            path: "/produto/:id",
-            name: "product",
-            components: {
-                default: ProductView,
-                header: SiteHeader,
-                footer: SiteFooter,
-            },
-            meta: {
-                requiresAuth: false,
-            },
-        },
-        {
-            path: "/quem-somos",
-            name: "about",
-            components: {
-                default: AboutView,
-                header: SiteHeader,
-                footer: SiteFooter,
-            },
-            meta: {
-                requiresAuth: false,
-            },
-        },
-        {
             path: "/contato",
             name: "contact",
             components: {
