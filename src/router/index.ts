@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/website/HomeView.vue";
 import MotorBikeView from "../views/website/MotorBikeView.vue";
 import AboutView from "../views/website/AboutView.vue";
@@ -10,7 +10,7 @@ import SiteFooter from "../components/website/_shared/TheFooter.vue";
 import NotFoundComponent from "../views/NotFoundComponent.vue";
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes: [
 
         {
@@ -89,7 +89,7 @@ const router = createRouter({
         /*
         *** Rotas para dashboard administrativo
         */
-        
+
         {
             path: "/404",
             name: "notFound",
