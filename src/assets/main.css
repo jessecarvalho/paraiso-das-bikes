@@ -18,14 +18,16 @@ INDICE
 /* 01.1. Config */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 :root {
     --primary-color: #0898ff;
-    --secondary-color: #E18335;
+    --secondary-color: #ffa011;
     --primary-color-hover: #1E91D6;
     --primary-extra-1-color: #08d6ff;
     --primary-extra-2-color: #0efff9;
@@ -41,6 +43,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: #1d1d1d;
 }
 
 /* 01.2. header */
@@ -53,7 +56,7 @@ header {
     padding: 1% 5%;
 }
 
-header #logo{
+header #logo {
     width: 100px;
 }
 
@@ -74,11 +77,12 @@ header nav ul li:hover {
     color: var(--secondary-color);
 }
 
-header nav ul a{
+header nav ul a {
     text-decoration: none;
     color: #000;
     margin: 0 2%;
 }
+
 #logo-mobile {
     display: none;
 }
@@ -104,7 +108,7 @@ header button {
         display: block;
     }
 
-    header nav ul{
+    header nav ul {
         transform: translateX(-100%);
         transition-duration: 10s;
         background-color: #fff;
@@ -117,7 +121,7 @@ header button {
 
     header nav.active ul {
         transition-duration: 1s;
-        transform: translateX(0);   
+        transform: translateX(0);
     }
 
     header button {
@@ -140,10 +144,11 @@ header button {
         font-size: 30px;
     }
 
-    header nav ul li{
+    header nav ul li {
         margin: 0;
         padding: 0;
     }
+
     #logo-mobile {
         display: flex;
     }
@@ -171,7 +176,7 @@ footer img {
 
 footer .row {
     display: grid;
-    grid-template-columns: 20% 25% 25% 30%;
+    grid-template-columns: 33% 33% 33%;
 }
 
 footer .row .col {
@@ -186,17 +191,18 @@ footer .row .col {
         flex-direction: column;
         align-items: start;
     }
+
     footer .row .col:first-child {
         align-items: center;
     }
 }
 
-footer .row .col ul{
+footer .row .col ul {
     list-style-type: none;
     padding: 0;
 }
 
-footer .row .col ul a{
+footer .row .col ul a {
     text-decoration: none;
     color: #fff;
 }
@@ -211,17 +217,17 @@ footer #absolute-footer {
     padding: 20px;
 }
 
-footer #absolute-footer p{
+footer #absolute-footer p {
     text-align: center;
     margin: 0;
-    font-size: 11px;
+    font-size: 18px;
 }
 
 footer h2 {
     margin: 0;
 }
 
-footer .social-media svg{
+footer .social-media svg {
     fill: #fff;
     margin-right: 15px;
 }
@@ -239,6 +245,7 @@ footer #absolute-footer a {
     footer .row {
         grid-template-columns: 100%;
     }
+
     footer .row .col {
         margin: 5px 20px;
     }
@@ -257,24 +264,28 @@ footer #absolute-footer a {
     justify-content: center;
     align-items: center;
 }
+
 .banner a {
     text-decoration: none;
     display: block;
     margin: 0 auto;
     width: fit-content;
 }
+
 a.button {
     display: flex;
     width: fit-content;
     text-decoration: none;
     margin: 15px auto 15px;
 }
+
 a.button.__invert button {
-    background-color: transparent;
-    border: #fff 2px solid;
+    background-color: rgb(1, 184, 1);
+    border: 2px solid rgb(1, 184, 1);
 }
-a.button button{
-    background-color: var(--secondary-color);
+
+a.button button {
+    background-color: rgb(1, 184, 1);
     color: #fff;
     padding: 10px 40px;
     border-radius: 7px;
@@ -283,139 +294,121 @@ a.button button{
     display: flex;
     align-items: center;
     gap: 5px;
-    border: 2px solid transparent;
+    border: 2px solid rgb(1, 184, 1);
+    font-size: 30px;
 }
+
 a.button button:hover {
     background-color: #fff;
     color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
+    border: 2px solid rgb(1, 184, 1);
 }
+
 a.button button:hover svg {
     fill: var(--secondary-color);
 }
-a.button button svg{
+
+a.button button svg {
     fill: #fff;
-    font-size: 20px;
+    font-size: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    a.button.__invert button {
+        font-size: 20px;
+    }
+}
+
 .banner#banner-home {
-    background: linear-gradient(to bottom, rgba(225, 131, 53, 0.52), rgba(0, 0, 0, 0.73)),
-    url('banner.jpg');
+    background: linear-gradient(to bottom, rgba(0, 57, 75, 0.30), rgba(0, 0, 0, 0.30));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .banner h2 {
-    font-size: 2vw;
+    font-size: 40px;
+    text-transform: lowercase;
     text-align: center;
-    color: #fff;
     text-transform: uppercase;
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
 }
 
 .banner h2 span {
-    font-size: 5vw;
+    font-size: 40px;
     display: block;
-    color: var(--primary-color);
+    font-family: "Oswald", sans-serif;
+}
+
+.banner h2 b {
+    font-size: 70px;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    color: rgb(255, 196, 0);
+}
+
+.banner h2 u {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 10vh;
+    font-weight: 200;
+    color: #fff;
+
+}
+
+.banner a.button button {
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    padding: 25px 50px;
+    font-weight: 700;
+}
+
+.banner a.button button:hover {
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    padding: 25px 50px;
+    color: #fff;
+}
+
+.banner a.button button svg {
+    font-size: 40px;
+}
+
+.banner a.button button:hover svg {
+    fill: #fff;
+}
+
+.banner button.go-down {
+    width: 80px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
     .banner h2 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
+
     .banner h2 span {
+        font-size: 6vw;
+    }
+
+    .banner h2 u {
+        font-size: 6vw;
+        font-weight: 800;
+    }
+
+    .banner h2 b {
         font-size: 8vw;
-    }
-}
 
-/* 02.2. Products */
-
-#products {
-    margin: calc(var(--section-margin) / 2) var(--section-margin);
-}
-
-#products .row {
-    display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
-}
-
-#products .row .col{
-    margin: 5px 0;
-    text-align: center;
-    position: relative;
-}
-
-#products .row .col span.tag{
-    position: absolute;
-    top: 2.5%;
-    left: 12.5%;
-    padding: 5px 10px;
-    border-radius: 10px;
-    color: #fff;
-}
-
-#products .row .col span.tag.blue{
-    background-color: blue;
-}
-
-#products .row .col span.tag.green{
-    background-color: green;
-}
-
-
-#products .row .col img{
-    width: 80%;
-}
-
-#products .row .col button{
-    background-color: var(--primary-color);
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#products .row .col button:hover{
-    background-color: var(--primary-color-hover);
-}
-
-#products .row .col h3{
-    margin: 15px 0;
-    font-size: 25px;
-}
-
-#products .row .col h3 span{
-    font-size: 15px;
-}
-
-#products .row .col h2{
-    font-size: 20px;
-    margin: 0;
-}
-#products .row .col p{
-    margin: 5px 0;
-}
-
-@media screen and (max-width: 768px) {
-    #products .row {
-        grid-template-columns: 50% 50%;
-    }
-    #products .row .col{
-        margin: 20px auto;
-    }
-    #products {
-        margin: calc(var(--section-margin) / 4) 0;
-    }
-    #products .row .col h3 span{
-        font-size: 12px;
-    }
-    #products .row .col h2{
-        font-size: 14px;
-        margin: 0;
-    }
-    #products .row .col h3{
-        margin: 5px 0;
-        font-size: 15px;
     }
 }
 
@@ -423,7 +416,7 @@ a.button button svg{
 
 #mini-banner {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
-    url('./img/mini-banner.jpg');
+        url('./img/mini-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -455,7 +448,8 @@ a.button button svg{
     #mini-banner h2 {
         font-size: 25px;
     }
-    .banner button{
+
+    .banner button {
         padding: 10px 20px;
     }
 }
@@ -475,15 +469,15 @@ a.button button svg{
     grid-template-columns: 50% 50%;
 }
 
-#about .about-text .row .col{
+#about .about-text .row .col {
     padding: 0 15px;
 }
 
-#about .about-text .row .col img{
+#about .about-text .row .col img {
     width: 100%;
 }
 
-#about .about-text .row .col h2{
+#about .about-text .row .col h2 {
     margin: 0;
 }
 
@@ -511,12 +505,12 @@ a.button button svg{
     font-size: 40px;
 }
 
-#about #mvv .row .col{
+#about #mvv .row .col {
     display: flex;
     flex-direction: column;
 }
 
-#about #mvv .row .col svg{
+#about #mvv .row .col svg {
     margin: 10px auto;
 }
 
@@ -524,25 +518,32 @@ a.button button svg{
     #about {
         margin: calc(var(--section-margin) / 2) 0;
     }
+
     #about .about-text .row {
         grid-template-columns: 100%;
     }
-    #about .about-text .row .col{
+
+    #about .about-text .row .col {
         margin: 20px 0;
     }
+
     #about #mvv .row {
         grid-template-columns: 100%;
     }
+
     #about #mvv {
         margin: 0;
     }
-    #about #mvv .row .col{
+
+    #about #mvv .row .col {
         margin: 20px 0;
     }
-    #about #mvv .row .col svg{
+
+    #about #mvv .row .col svg {
         margin: 10px auto;
     }
 }
+
 /*
 *** 04. CONTACT PAGE
 */
@@ -561,7 +562,9 @@ a.button button svg{
     padding: 0 15px;
 }
 
-#contact .row .col input, #contact .row .col textarea, #contact .row .col select {
+#contact .row .col input,
+#contact .row .col textarea,
+#contact .row .col select {
     display: block;
     width: 100%;
     margin: 10px 0;
@@ -589,12 +592,15 @@ a.button button svg{
     #contact {
         margin: calc(var(--section-margin) / 4) 0;
     }
+
     #contact .row {
         grid-template-columns: 100%;
     }
-    #contact .row .col{
+
+    #contact .row .col {
         margin: 20px 0;
     }
+
     #contact .row .col button {
         margin: 15px auto;
     }
@@ -608,7 +614,7 @@ a.button button svg{
     margin: calc(var(--section-margin) / 2) var(--section-margin);
 }
 
-#single-product #single-product-main .row{
+#single-product #single-product-main .row {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 20px;
@@ -618,12 +624,12 @@ a.button button svg{
     width: 100%;
 }
 
-#single-product #single-product-info span#price{
-    font-size: 20px;
+#single-product #single-product-info span#price {
+    font-size: 30px;
     font-weight: 700;
 }
 
-#single-product #single-product-info button{
+#single-product #single-product-info button {
     background-color: var(--primary-color);
     color: #fff;
     padding: 10px 20px;
@@ -634,7 +640,7 @@ a.button button svg{
     cursor: pointer;
 }
 
-#single-product #single-product-info button:hover{
+#single-product #single-product-info button:hover {
     background-color: var(--primary-color-hover);
 }
 
@@ -645,15 +651,26 @@ a.button button svg{
 
 /* 06.1. Banner */
 
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
 .banner#banner-motor-bike {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
-    url('banner-motorizada.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-.banner#banner-motor-bike h2>span{
+.banner#banner-motor-bike h2>span {
     font-size: 5vw;
     display: block;
     color: transparent;
@@ -662,7 +679,7 @@ a.button button svg{
 
 /* 06.2. Presentation */
 
-#presentation{
+#presentation {
     margin: calc(var(--section-margin) / 2) var(--section-margin);
 }
 
@@ -676,7 +693,7 @@ a.button button svg{
     width: 100%;
 }
 
-#bike-construction{
+#bike-construction {
     margin: calc(var(--section-margin) / 2) var(--section-margin);
 }
 
@@ -687,7 +704,7 @@ a.button button svg{
     fill: var(--primary-color);
 }
 
-#bike-construction .row{
+#bike-construction .row {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 20px;
@@ -699,27 +716,37 @@ a.button button svg{
 
 #store {
     width: 80%;
-    margin: 50px auto;
+    margin: 150px auto;
     display: flex;
     flex-direction: column;
 }
+
+#store .logo {
+    width: 250px;
+    margin: auto;
+    filter: invert(1);
+
+}
+
+
 #store svg.icon {
     margin: auto;
     width: fit-content;
     font-size: 50px;
     fill: var(--secondary-color)
 }
+
 #store h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px 0;
     color: var(--secondary-color);
 }
 
 #store p {
     font-weight: 300;
-    text-align: justify;
-    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
 }
 
 #store .row {
@@ -727,10 +754,12 @@ a.button button svg{
     grid-template-columns: 30% 30% 30%;
     gap: 5%;
 }
+
 #store .row .col {
     display: flex;
 }
-#store .row .col img{
+
+#store .row .col img {
     width: 100%;
     margin: 0 auto;
     border-radius: 15px;
@@ -738,12 +767,31 @@ a.button button svg{
 
 @media screen and (max-width: 768px) {
     #store {
+        margin: 50px auto;
+    }
+
+    #store h2 {
+        font-size: 25px;
+    }
+
+    #store p {
+        font-size: 20px;
+    }
+
+    #store button {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    #store {
         width: 90%;
     }
+
     #store .row {
         display: flex;
         flex-direction: column;
     }
+
     #store .row .col {
         margin: 15px 0;
     }
@@ -767,21 +815,24 @@ a.button button svg{
     gap: 5%;
     margin-bottom: 25px;
 }
+
 #advantages .row .col {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 #advantages .row .col svg {
     margin: 0 auto;
     width: fit-content;
     font-size: 50px;
     fill: #fff;
 }
+
 #advantages .row .col h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px 0;
     color: #fff;
 }
@@ -790,17 +841,32 @@ a.button button svg{
     margin: 0;
     color: #fff;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
+    #advantages .row .col h2 {
+        font-size: 25px;
+    }
+
+    #advantages .row .col p {
+        font-size: 20px;
+    }
+
+    #advantages button {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
     #advantages .box {
         width: 90%;
     }
+
     #advantages .row {
         display: flex;
         flex-direction: column;
     }
+
     #advantages .row .col {
         margin: 15px 0;
     }
@@ -828,6 +894,7 @@ section#construction h3 {
     text-align: center;
     margin: 0;
     color: var(--secondary-color);
+    font-size: 25px;
 }
 
 section#construction h4 {
@@ -844,7 +911,7 @@ section#construction p {
 section#construction p {
     font-weight: 300;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 section#construction img {
@@ -853,25 +920,41 @@ section#construction img {
 }
 
 @media screen and (max-width: 768px) {
+    section#construction h2 {
+        font-size: 25px;
+    }
+
+    section#construction p {
+        font-size: 18px;
+    }
+
+    section#construction button {
+        font-size: 23px;
+        padding: 5px 15px;
+    }
+
     section#construction {
         width: 95%;
     }
+
     section#construction img {
         width: 100%;
     }
+
     section#construction h4 {
         font-size: 50px;
         text-align: center;
         margin: 0;
         color: var(--primary-color);
     }
+
     section#construction .price p {
         font-size: 13px;
     }
 }
 
 section#localization {
-    background-color: var(--secondary-color);
+    background-color: #02144e;
     padding: 10px 0;
 }
 
@@ -904,5 +987,66 @@ section#localization h2 {
 
     section#localization .box h2 {
         font-size: 25px;
+    }
+
+    section#location button {
+        font-size: 20px;
+    }
+}
+
+/*
+*** TESTIMONIAIS
+*/
+
+#testimonials {
+    padding: 5% 5%;
+    background-color: var(--secondary-color);
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+#testimonials h3 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 25px;
+}
+
+#testimonials p {
+    font-size: 19px;
+}
+
+#testimonials .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 100%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#testimonials .item img {
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    #testimonials h2 {
+        font-size: 25px;
+    }
+
+    #testimonials h3 {
+        font-size: 20px;
+    }
+
+    #testimonials {
+        padding: 5% 0;
+        background-color: var(--secondary-color);
     }
 }
