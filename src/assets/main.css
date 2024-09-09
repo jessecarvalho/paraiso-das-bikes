@@ -25,6 +25,10 @@ INDICE
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    color: #fff;
+}
+
 :root {
     --primary-color: #0898ff;
     --secondary-color: #ffa011;
