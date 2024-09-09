@@ -1050,3 +1050,28 @@ section#localization h2 {
         background-color: var(--secondary-color);
     }
 }
+
+.image-gallery {
+    height: 30vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.image-gallery#gallery-image-1 {
+    background: url("/src/assets/img/produtos/bicicletas/motorizada-2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.image-gallery#gallery-image-2 {
+    background: url("/src/assets/img/produtos/bicicletas/motorizada-1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.image-gallery#gallery-image-3 {
+    background: url("/src/assets/img/produtos/bicicletas/motorizada-3.jpeg");
+    background-size: cover;
+    background-position: center;
+}

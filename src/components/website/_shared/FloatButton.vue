@@ -11,8 +11,8 @@ a {
     bottom: 20px;
     background-color: rgb(24, 176, 24);
     color: #fff;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     display: flex;
 }
