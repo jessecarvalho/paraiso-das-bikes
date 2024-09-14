@@ -23,7 +23,7 @@
       <div class="row">
         <div class="text-item">
           <h2>EXTREMAMENTE ECONÔMICA</h2>
-          <h3>Nossas bicicletas fazem incríveis 60km por litro de gasolina</h3>
+          <h3>Nossas bicicletas fazem incríveis 40km por litro de gasolina</h3>
         </div>
         <div class="text-item">
           <h2>qualidade na construção</h2>
@@ -44,8 +44,8 @@
       </div>
     </div>
 
-    <a href="#store">
-      <button>
+    <a href="#store" style="color: #fff;">
+      <button style="color: #fff;">
         Quero saber mais
       </button>
     </a>

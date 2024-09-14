@@ -15,7 +15,7 @@
             <div class="col">
                 <div>
                     <h2>Contato</h2>
-                    <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                    <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
                         target="_blank">
                         <p>(11) 97264-5352</p>
                     </a>
