@@ -1,5 +1,6 @@
 <template>
-    <a href="https://wa.me/5511972645352" target="_blank" name="Whatsapp">
+    <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+        target="_blank" name="Whatsapp">
         <font-awesome-icon :icon="['fab', 'whatsapp']" />
     </a>
 </template>

@@ -1,7 +1,8 @@
 <template>
     <section id="mini-banner">
         <h2>Fazemos <span class="consertos"> consertos </span> de <br> <span>bicicletas motorizadas</span></h2>
-        <a href="https://wa.me/5511972645352" class="button" target="_blank">
+        <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+            class="button" target="_blank">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                     <path

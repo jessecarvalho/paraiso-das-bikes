@@ -15,7 +15,8 @@
             <div class="col">
                 <div>
                     <h2>Contato</h2>
-                    <a href="https://wa.me/5511972645352" target="_blank">
+                    <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                        target="_blank">
                         <p>(11) 97264-5352</p>
                     </a>
                     <div class="social-media">
@@ -38,7 +39,7 @@
 
         <div id="absolute-footer">
             <p>Todos direitos reservados à Paraíso das Bikes</p>
-            <p>Desenvolvido por <a href="https://jessecarvalho.site/pt" target="_blank">Jessé Carvalho</a> </p>
+            <p>Desenvolvido por <a href="https://linkedin.com/in/jesse-carvalho/" target="_blank">Jessé Carvalho</a> </p>
         </div>
 
     </footer>

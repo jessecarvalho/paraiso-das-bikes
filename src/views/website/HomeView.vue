@@ -13,7 +13,8 @@
                 opcão
                 de custo-benefício para nossos clientes. Entre em contato e faça um orçamento.
             </p>
-            <a href="https://wa.me/5511972645352" target="_blank" class="button">
+            <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                target="_blank" class="button">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                         <path
@@ -23,7 +24,7 @@
                 </button>
             </a>
 
-            <Splide :options="{
+            <!-- <Splide :options="{
                 rewind: true,
                 type: 'loop',
                 perPage: 3,
@@ -44,7 +45,7 @@
                 <SplideSlide>
                     <div class="image-gallery" id="gallery-image-3"></div>
                 </SplideSlide>
-            </Splide>
+            </Splide> -->
 
         </section>
 
@@ -79,7 +80,8 @@
                             as bicicletas de nossos clientes.</p>
                     </div>
                 </div>
-                <a href="https://wa.me/5511972645352" target="_blank" class="button __invert">
+                <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                    target="_blank" class="button __invert">
 
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -109,7 +111,8 @@
                     e débito
                     e <b>parcelamos</b> em até <b>12x</b>.</p>
             </div>
-            <a href="https://wa.me/5511972645352" target="_blank" class="button">
+            <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                target="_blank" class="button">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                         <path
@@ -196,7 +199,8 @@
                         src="https://maps.google.com/maps?width=520&amp;height=600&amp;hl=en&amp;q=RuaSantaMargaridaVilaParaisoGuarulhosParaisoDasBikes&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 
                 </div>
-                <a href="https://wa.me/5511972645352" target="_blank" class="button __invert">
+                <a href="https://wa.me/5511972645352?text='Olá, vim do site e quero saber mais sobre bicicletas motorizadas'"
+                    target="_blank" class="button __invert">
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             <path
