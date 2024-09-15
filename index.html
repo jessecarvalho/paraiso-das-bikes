@@ -38,26 +38,30 @@
 
   <script>
     window.onload = function () {
-      // Seleciona o botão de WhatsApp
-      var zapBtn = document.querySelectorAll(".wpp-button");
+      // Seleciona todos os botões de WhatsApp
+      var zapBtns = document.querySelectorAll(".wpp-button");
 
-      if (zapBtn) {
-        console.log("Botão encontrado");
+      if (zapBtns.length > 0) {
+        console.log("Botões encontrados");
 
-        // Adiciona o evento de clique para disparar o rastreamento
-        zapBtn.addEventListener("click", function () {
-          console.log("Clique detectado");
+        // Itera sobre a lista de botões
+        zapBtns.forEach(function (zapBtn) {
+          // Adiciona o evento de clique para disparar o rastreamento
+          zapBtn.addEventListener("click", function () {
+            console.log("Clique detectado");
 
-          // Dispara o rastreamento de conversão do Google Ads
-          gtag_report_conversion();
+            // Dispara o rastreamento de conversão do Google Ads
+            gtag_report_conversion();
 
-          // Se houver uma URL de redirecionamento, inclua-a na função gtag_report_conversion
+            // Se houver uma URL de redirecionamento, inclua-a na função gtag_report_conversion
+          });
         });
       } else {
         console.error("Botão WhatsApp não encontrado!");
       }
     };
   </script>
+
 
 </head>
 
