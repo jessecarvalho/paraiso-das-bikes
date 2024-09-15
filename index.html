@@ -17,6 +17,31 @@
 
     gtag('config', 'AW-16692782496');
   </script>
+
+  <!-- Event snippet for Conversão clique wpp conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16692782496/PROHCPSS_NIZEKDL3pc-',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+  <script>
+    var zapBtn = document.querySelector(".btn-whatsapp");
+
+    zapBtn.addEventListener("click", function () {
+      gtag_report_conversion();
+    });
+  </script>
 </head>
 
 <body>

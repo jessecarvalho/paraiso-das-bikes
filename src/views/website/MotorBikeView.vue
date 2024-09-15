@@ -14,7 +14,7 @@
                 de custo-benefício para nossos clientes. Entre em contato e faça um orçamento.
             </p>
             <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                target="_blank" class="button">
+                target="_blank" class="button wpp-button">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                         <path
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                    target="_blank" class="button __invert">
+                    target="_blank" class="button __invert wpp-button">
 
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -97,7 +97,7 @@
                 <p>Aceitamos todos os <b>cartões</b> de crédito e débito e <b>parcelamos</b> em até <b>12x</b>.</p>
             </div>
             <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                target="_blank" class="button">
+                target="_blank" class="button wpp-button">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                         <path
@@ -185,7 +185,7 @@
 
                 </div>
                 <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                    target="_blank" class="button __invert">
+                    target="_blank" class="button __invert wpp-button">
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             <path
