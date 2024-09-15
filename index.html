@@ -37,14 +37,28 @@
   </script>
 
   <script>
-    var zapBtn = document.querySelector(".wpp-button");
+    window.onload = function () {
+      // Seleciona o botão de WhatsApp
+      var zapBtn = document.querySelector(".wpp-button");
 
-    console.log("entrou 1");
+      if (zapBtn) {
+        console.log("Botão encontrado");
 
-    zapBtn.addEventListener("click", function () {
-      gtag_report_conversion();
-    });
+        // Adiciona o evento de clique para disparar o rastreamento
+        zapBtn.addEventListener("click", function () {
+          console.log("Clique detectado");
+
+          // Dispara o rastreamento de conversão do Google Ads
+          gtag_report_conversion();
+
+          // Se houver uma URL de redirecionamento, inclua-a na função gtag_report_conversion
+        });
+      } else {
+        console.error("Botão WhatsApp não encontrado!");
+      }
+    };
   </script>
+
 </head>
 
 <body>
