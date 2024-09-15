@@ -22,6 +22,7 @@
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
   <script>
     function gtag_report_conversion(url) {
+      console.log("entrou 2");
       var callback = function () {
         if (typeof (url) != 'undefined') {
           window.location = url;
@@ -37,6 +38,8 @@
 
   <script>
     var zapBtn = document.querySelector(".wpp-button");
+
+    console.log("entrou 1");
 
     zapBtn.addEventListener("click", function () {
       gtag_report_conversion();
