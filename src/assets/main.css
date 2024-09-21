@@ -1111,7 +1111,7 @@ section#construction p {
 }
 
 section#construction img {
-    height: 300px;
+    max-height: 300px;
     max-width: 80%;
     margin: auto;
 }
@@ -1125,6 +1125,38 @@ section#construction img {
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 1367px) {
+    section#construction p {
+        font-size: 18px;
+    }
+
+    section#construction h4 {
+        font-size: 50px;
+    }
+
+    section#construction img {
+        max-height: 220px;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    section#construction {
+        grid-template-columns: 100%;
+    }
+
+    section#construction img {
+        max-height: 300px;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     section#construction h2 {
@@ -1157,11 +1189,6 @@ section#construction img {
 
     section#construction .price p {
         font-size: 13px;
-    }
-
-
-    section#construction {
-        grid-template-columns: 100%;
     }
 }
 
