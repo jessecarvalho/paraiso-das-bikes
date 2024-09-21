@@ -1,20 +1,20 @@
 <template>
     <main>
-        <the-banner />
 
         <section id="store">
             <img src="@/assets/logo.png" alt="Logo" class="logo">
-            <h2>As melhores bicicletas motorizadas da região de SP</h2>
-            <p>Descubra a <b>liberdade</b> de pilotar pelas ruas de São Paulo de uma forma completamente nova com o <b>
-                    conforto </b>
-                das
-                <b> bicicletas motorizadas da Paraíso das Bikes. </b> Trabalhamos com peças de qualidade e oferecemos a
-                melhor
-                opcão
-                de custo-benefício para nossos clientes. Entre em contato e faça um orçamento.
+            <h2>A melhor oficina de bicicletas motorizdas da região de SP</h2>
+            <p>
+                Somos uma bicicletaria <b>especializada</b> em bicicletas motorizadas, trabalhamos tanto na <b>venda</b>
+                quanto na
+                <b>manutenção</b> e em <b>melhorias</b>, e estamos a disposição para solução que você precisar.
+                <br><br>
+                Oferecemos peças de qualidade, trabalho especializado e preço justo, venha conhecer.
+                <br><br>
+                Também somos uma <b>assistência autorizada</b> da Bikelete.
             </p>
             <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                target="_blank" class="button wpp-button wpp-button-conheca">
+                target="_blank" class="button wpp-button">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                         <path
@@ -23,30 +23,6 @@
                     Conheça o Paraíso das Bikes
                 </button>
             </a>
-
-            <!-- <Splide :options="{
-                rewind: true,
-                type: 'loop',
-                perPage: 3,
-                gap: 50,
-                pagination: false,
-                breakpoints: {
-                    768: {
-                        perPage: 1
-                    }
-                }
-            }" aria-label="My Favorite Images" id="gallery-image">
-                <SplideSlide>
-                    <div class="image-gallery" id="gallery-image-1"></div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div class="image-gallery" id="gallery-image-2"></div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div class="image-gallery" id="gallery-image-3"></div>
-                </SplideSlide>
-            </Splide> -->
-
         </section>
 
         <section id="advantages">
@@ -67,8 +43,8 @@
                                 d="M112 112c0 35.3-28.7 64-64 64V336c35.3 0 64 28.7 64 64H464c0-35.3 28.7-64 64-64V176c-35.3 0-64-28.7-64-64H112zM0 128C0 92.7 28.7 64 64 64H512c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM176 256a112 112 0 1 1 224 0 112 112 0 1 1 -224 0zm80-48c0 8.8 7.2 16 16 16v64h-8c-8.8 0-16 7.2-16 16s7.2 16 16 16h24 24c8.8 0 16-7.2 16-16s-7.2-16-16-16h-8V208c0-8.8-7.2-16-16-16H272c-8.8 0-16 7.2-16 16z" />
                         </svg>
                         <h2>Preços Justos</h2>
-                        <p>Todas nossas bicicletas são criadas pensadas no melhor custo benefício para nossos clientes,
-                            oferecemos preço acessível por uma bicicleta de alto padrão.</p>
+                        <p>Oferecemos peças de qualidade, suporte e atendimento especializado em um preço que cabe no seu
+                            bolso.</p>
                     </div>
                     <div class="col">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
@@ -76,85 +52,24 @@
                                 d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zm40-89.3l0 0 0 0-.2-.2c-.2-.2-.4-.5-.7-.9c-.6-.8-1.6-2-2.8-3.4c-2.5-2.8-6-6.6-10.2-10.3c-8.8-7.8-18.8-14-27.7-14s-18.9 6.2-27.7 14c-4.2 3.7-7.7 7.5-10.2 10.3c-1.2 1.4-2.2 2.6-2.8 3.4c-.3 .4-.6 .7-.7 .9l-.2 .2 0 0 0 0 0 0c-2.1 2.8-5.7 3.9-8.9 2.8s-5.5-4.1-5.5-7.6c0-17.9 6.7-35.6 16.6-48.8c9.8-13 23.9-23.2 39.4-23.2s29.6 10.2 39.4 23.2c9.9 13.2 16.6 30.9 16.6 48.8c0 3.4-2.2 6.5-5.5 7.6s-6.9 0-8.9-2.8l0 0 0 0zm160 0l0 0-.2-.2c-.2-.2-.4-.5-.7-.9c-.6-.8-1.6-2-2.8-3.4c-2.5-2.8-6-6.6-10.2-10.3c-8.8-7.8-18.8-14-27.7-14s-18.9 6.2-27.7 14c-4.2 3.7-7.7 7.5-10.2 10.3c-1.2 1.4-2.2 2.6-2.8 3.4c-.3 .4-.6 .7-.7 .9l-.2 .2 0 0 0 0 0 0c-2.1 2.8-5.7 3.9-8.9 2.8s-5.5-4.1-5.5-7.6c0-17.9 6.7-35.6 16.6-48.8c9.8-13 23.9-23.2 39.4-23.2s29.6 10.2 39.4 23.2c9.9 13.2 16.6 30.9 16.6 48.8c0 3.4-2.2 6.5-5.5 7.6s-6.9 0-8.9-2.8l0 0 0 0 0 0z" />
                         </svg>
                         <h2>Suporte</h2>
-                        <p>Diferente de outros vendedores, também damos total suporte e oferecemos manutenção completa para
+                        <p>Também damos total suporte e oferecemos manutenção completa para
                             as bicicletas de nossos clientes.</p>
                     </div>
                 </div>
                 <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                    target="_blank" class="button __invert wpp-button wpp-button-entre-em-contato">
+                    target="_blank" class="button __invert wpp-button">
 
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             <path
                                 d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
                         </svg>
-                        Entre em contato
+                        Nos mande uma mensagem
                     </button>
                 </a>
             </div>
         </section>
 
-        <section id="construction">
-            <div class="col">
-                <div class="col">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                        <path
-                            d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                    </svg>
-                    <h2>Linha Padrão</h2>
-                    <p>A linha padrão é para quem quer ter o poder de uma bicicleta motorizada por um baixo preço.</p>
-                    <img src="@/assets/img/bike.png" alt="Bicicleta">
-                    <div class="price">
-                        <h3>Tudo isso por apenas</h3>
-                        <h4>R$ 1.799,99</h4>
-                        <p>Aceitamos pagamentos via <b>PIX</b>, <b>dinheiro a vista</b> e também <br> todos os
-                            <b>cartões</b> de
-                            crédito
-                            e débito
-                            e <b>parcelamos</b> em até <b>12x</b>.
-                        </p>
-                    </div>
-                    <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                        target="_blank" class="button wpp-button wpp-button-comprar-bike-padrao">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                                <path
-                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                            </svg>
-                            Comprar agora
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                    <path
-                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                </svg>
-                <h2>Linha Comfort</h2>
-                <p>A linha comfort é para quem quer ter o poder de uma motorizada com maior conforto e robustez.</p>
-                <img src="@/assets/img/bicicleta.png" alt="Bicicleta">
-                <div class="price">
-                    <h3>Tudo isso por apenas</h3>
-                    <h4>R$ 2.399,99</h4>
-                    <p>Aceitamos pagamentos via <b>PIX</b>, <b>dinheiro a vista</b> e também <br> todos os <b>cartões</b> de
-                        crédito
-                        e débito
-                        e <b>parcelamos</b> em até <b>12x</b>.</p>
-                </div>
-                <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                    target="_blank" class="button wpp-button wpp-button-comprar-bike-comfort">
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-                            <path
-                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-                        </svg>
-                        Comprar agora
-                    </button>
-                </a>
-            </div>
-
-        </section>
 
         <section id="testimonials">
             <h2>Depoímentos</h2>
@@ -233,7 +148,7 @@
 
                 </div>
                 <a href="https://wa.me/5511972645352?text=Olá, vim do site e quero saber mais sobre bicicletas motorizadas"
-                    target="_blank" class="button __invert wpp-button wpp-button-float">
+                    target="_blank" class="button __invert wpp-button">
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             <path

@@ -1067,9 +1067,11 @@ a.button button svg {
 }
 
 section#construction {
+    text-align: center;
     width: 80%;
     margin: 50px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     flex-direction: column;
 }
 
@@ -1092,7 +1094,7 @@ section#construction h3 {
 }
 
 section#construction h4 {
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     margin: 0;
     color: var(--primary-color);
@@ -1105,11 +1107,12 @@ section#construction p {
 section#construction p {
     font-weight: 300;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 section#construction img {
-    width: 80%;
+    height: 300px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -1154,6 +1157,11 @@ section#construction img {
 
     section#construction .price p {
         font-size: 13px;
+    }
+
+
+    section#construction {
+        grid-template-columns: 100%;
     }
 }
 

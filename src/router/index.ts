@@ -5,6 +5,7 @@ import AboutView from "../views/website/AboutView.vue";
 import ContactView from "../views/website/ContactView.vue";
 import ProductView from "../views/website/ProductView.vue";
 import StoreView from "../views/website/StoreView.vue";
+import MotorBikeFixView from "../views/website/MotorBikeFixView.vue";
 import SiteHeader from "../components/website/_shared/TheHeader.vue";
 import SiteFooter from "../components/website/_shared/TheFooter.vue";
 import NotFoundComponent from "../views/NotFoundComponent.vue";
@@ -30,6 +31,19 @@ const router = createRouter({
             name: "motorBike",
             components: {
                 default: MotorBikeView,
+                header: SiteHeader,
+                footer: SiteFooter,
+            },
+            meta: {
+                requiresAuth: false,
+            },
+        },
+
+        {
+            path: "/conserto-motorizadas",
+            name: "motorBikeFix",
+            components: {
+                default: MotorBikeFixView,
                 header: SiteHeader,
                 footer: SiteFooter,
             },
