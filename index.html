@@ -38,22 +38,17 @@
 
   <script>
     window.onload = function () {
-      // Seleciona todos os botões de WhatsApp
       var zapBtns = document.querySelectorAll(".wpp-button");
 
       if (zapBtns.length > 0) {
         console.log("Botões encontrados");
 
-        // Itera sobre a lista de botões
         zapBtns.forEach(function (zapBtn) {
-          // Adiciona o evento de clique para disparar o rastreamento
           zapBtn.addEventListener("click", function () {
             console.log("Clique detectado");
 
-            // Dispara o rastreamento de conversão do Google Ads
             gtag_report_conversion();
 
-            // Se houver uma URL de redirecionamento, inclua-a na função gtag_report_conversion
           });
         });
       } else {
@@ -61,7 +56,17 @@
       }
     };
   </script>
-
+  <!--Hotjar events-->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5151487, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 </head>
 
