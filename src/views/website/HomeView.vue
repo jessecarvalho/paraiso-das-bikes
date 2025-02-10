@@ -106,7 +106,7 @@
                     <img src="@/assets/img/bike.png" alt="Bicicleta">
                     <div class="price">
                         <h3>Tudo isso por apenas</h3>
-                        <h4>R$ 1.799,99</h4>
+                        <h4>R$ 1.899,99</h4>
                         <p>Aceitamos pagamentos via <b>PIX</b>, <b>dinheiro a vista</b> e também <br> todos os
                             <b>cartões</b> de
                             crédito
