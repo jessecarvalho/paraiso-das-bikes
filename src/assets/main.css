@@ -394,6 +394,12 @@ a.button button svg {
     max-width: 90%;
 }
 
+.banner#banner-home .banner-logo {
+    width: 220px;
+    margin: 0 auto 10px;
+    filter: invert(1);
+}
+
 .banner h1 {
     font-size: 40px;
     font-weight: 900;
@@ -496,6 +502,10 @@ a.button button svg {
 }
 
 @media screen and (max-width: 768px) {
+    .banner#banner-home .banner-logo {
+        width: 160px;
+    }
+
     .banner#banner-home {
         height: 100%;
         min-height: 100vh;
@@ -526,6 +536,10 @@ a.button button svg {
 }
 
 @media screen and (max-width: 480px) {
+    .banner#banner-home .banner-logo {
+        width: 140px;
+    }
+
     .banner#banner-home h1 {
         padding: 0 5%;
         font-size: 22px;
@@ -862,6 +876,70 @@ a.button button svg {
     flex-direction: column;
 }
 
+#results {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+#results .box {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#results .results-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#results .results-intro h2 {
+    margin: 0 0 12px;
+    color: #fff;
+    font-size: 30px;
+}
+
+#results .results-intro p {
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+#results .results-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+
+#results .result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#results .result-card .svg-inline--fa {
+    width: fit-content;
+    height: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#results .result-card h3 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+#results .result-card p {
+    margin: 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+}
+
 #store .logo {
     width: 250px;
     margin: auto;
@@ -908,6 +986,27 @@ a.button button svg {
 
 @media screen and (max-width: 1600px) {
 
+    #results .results-intro h2 {
+        font-size: 25px;
+    }
+
+    #results .results-intro p {
+        font-size: 20px;
+    }
+
+    #results .result-card h3 {
+        font-size: 25px;
+    }
+
+    #results .result-card .svg-inline--fa {
+        width: 46px;
+        height: 46px;
+    }
+
+    #results .result-card p {
+        font-size: 20px;
+    }
+
     #store h2 {
         font-size: 30px;
     }
@@ -923,6 +1022,48 @@ a.button button svg {
 }
 
 @media screen and (max-width: 768px) {
+    #results {
+        padding: 20px 0;
+    }
+
+    #results .box {
+        width: 90%;
+    }
+
+    #results .results-intro {
+        margin-bottom: 24px;
+    }
+
+    #results .results-intro h2 {
+        font-size: 26px;
+    }
+
+    #results .results-intro p {
+        font-size: 18px;
+    }
+
+    #results .results-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #results .result-card {
+        margin: 15px 0;
+    }
+
+    #results .result-card h3 {
+        font-size: 25px;
+    }
+
+    #results .result-card .svg-inline--fa {
+        width: 42px;
+        height: 42px;
+    }
+
+    #results .result-card p {
+        font-size: 20px;
+    }
+
     #store {
         margin: 50px auto;
     }
@@ -955,6 +1096,27 @@ a.button button svg {
 }
 
 @media screen and (max-width: 468px) {
+    #results .results-intro h2 {
+        font-size: 22px;
+    }
+
+    #results .results-intro p {
+        font-size: 16px;
+    }
+
+    #results .result-card h3 {
+        font-size: 20px;
+    }
+
+    #results .result-card .svg-inline--fa {
+        width: 38px;
+        height: 38px;
+    }
+
+    #results .result-card p {
+        font-size: 18px;
+    }
+
     #store .logo {
         width: 50%;
     }
@@ -973,6 +1135,50 @@ a.button button svg {
 #advantages {
     background-color: var(--secondary-color);
     padding: 20px 0;
+}
+
+#mechanics-highlight {
+    width: 80%;
+    margin: 70px auto;
+}
+
+#mechanics-highlight .mechanics-content {
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.12), rgba(0, 0, 0, 0.05));
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    border-radius: 24px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+#mechanics-highlight .mechanics-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#mechanics-highlight .mechanics-text h2 {
+    margin: 0 0 16px;
+    color: var(--secondary-color);
+    font-size: 38px;
+}
+
+#mechanics-highlight .mechanics-text p {
+    margin: 0 0 16px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#mechanics-highlight .mechanics-text p:last-child {
+    margin-bottom: 0;
+}
+
+#mechanics-highlight .wpp-button {
+    flex-shrink: 0;
+    margin: 12px 0 0;
+    align-self: center;
 }
 
 #advantages .box {
@@ -1018,6 +1224,14 @@ a.button button svg {
 }
 
 @media screen and (max-width: 1600px) {
+    #mechanics-highlight .mechanics-text h2 {
+        font-size: 32px;
+    }
+
+    #mechanics-highlight .mechanics-text p {
+        font-size: 20px;
+    }
+
     #advantages .row .col h2 {
         font-size: 25px;
     }
@@ -1029,6 +1243,34 @@ a.button button svg {
 }
 
 @media screen and (max-width: 768px) {
+    #mechanics-highlight {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    #mechanics-highlight .mechanics-content {
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mechanics-highlight .mechanics-text h2 {
+        font-size: 28px;
+    }
+
+    #mechanics-highlight .mechanics-text p {
+        font-size: 18px;
+    }
+
+    #mechanics-highlight .wpp-button {
+        width: 100%;
+    }
+
+    #mechanics-highlight .wpp-button button {
+        width: 100%;
+        justify-content: center;
+    }
+
     #advantages .row .col h2 {
         font-size: 25px;
     }
@@ -1057,6 +1299,18 @@ a.button button svg {
 }
 
 @media screen and (max-width: 480px) {
+    #mechanics-highlight .mechanics-content {
+        padding: 24px 18px;
+    }
+
+    #mechanics-highlight .mechanics-text h2 {
+        font-size: 22px;
+    }
+
+    #mechanics-highlight .mechanics-text p {
+        font-size: 16px;
+    }
+
     #advantages .row .col h2 {
         font-size: 20px;
     }
@@ -1073,6 +1327,24 @@ section#construction {
     display: grid;
     grid-template-columns: 50% 50%;
     flex-direction: column;
+}
+
+section#construction .section-heading {
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+}
+
+section#construction .section-heading h2 {
+    font-size: 42px;
+    margin: 0 0 12px;
+    color: var(--secondary-color);
+}
+
+section#construction .section-heading p {
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 section#construction h2 {
@@ -1117,6 +1389,14 @@ section#construction img {
 }
 
 @media screen and (max-width: 1600px) {
+    section#construction .section-heading h2 {
+        font-size: 34px;
+    }
+
+    section#construction .section-heading p {
+        font-size: 20px;
+    }
+
     section#construction h2 {
         font-size: 25px;
     }
@@ -1159,6 +1439,14 @@ section#construction img {
 
 
 @media screen and (max-width: 768px) {
+    section#construction .section-heading h2 {
+        font-size: 28px;
+    }
+
+    section#construction .section-heading p {
+        font-size: 18px;
+    }
+
     section#construction h2 {
         font-size: 25px;
     }
@@ -1189,6 +1477,16 @@ section#construction img {
 
     section#construction .price p {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section#construction .section-heading h2 {
+        font-size: 22px;
+    }
+
+    section#construction .section-heading p {
+        font-size: 16px;
     }
 }
 
@@ -1263,6 +1561,57 @@ section#localization h2 {
     color: #fff;
 }
 
+#testimonials .testimonials-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0 36px;
+}
+
+#testimonials .testimonials-rating .rating-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    padding: 18px 28px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#testimonials .testimonials-rating .rating-score span {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+#testimonials .testimonials-rating .rating-score small {
+    color: #ffb800;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#testimonials .testimonials-rating .stars {
+    display: flex;
+    gap: 8px;
+}
+
+#testimonials .testimonials-rating .stars .svg-inline--fa {
+    width: 28px;
+    height: 28px;
+    color: #ffb800;
+}
+
+#testimonials .testimonials-rating p {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
 #testimonials h4 {
     color: #fff;
 }
@@ -1297,6 +1646,18 @@ section#localization h2 {
         font-size: 20px;
     }
 
+    #testimonials .testimonials-rating p {
+        font-size: 18px;
+    }
+
+    #testimonials .testimonials-rating .rating-score span {
+        font-size: 52px;
+    }
+
+    #testimonials .testimonials-rating .rating-score small {
+        font-size: 18px;
+    }
+
     #testimonials {
         padding: 5% 0;
         background-color: var(--secondary-color);
@@ -1314,6 +1675,24 @@ section#localization h2 {
 
     #testimonials p {
         font-size: 15px;
+    }
+
+    #testimonials .testimonials-rating .stars .svg-inline--fa {
+        width: 24px;
+        height: 24px;
+    }
+
+    #testimonials .testimonials-rating .rating-score {
+        min-width: 150px;
+        padding: 16px 22px;
+    }
+
+    #testimonials .testimonials-rating .rating-score span {
+        font-size: 44px;
+    }
+
+    #testimonials .testimonials-rating .rating-score small {
+        font-size: 16px;
     }
 }
 
