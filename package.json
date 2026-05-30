@@ -2,6 +2,9 @@
   "name": "paraiso-das-bikes",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -32,9 +35,9 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@splidejs/vue-splide": "^0.6.12",
-    "@tsconfig/node18": "^2.0.1",
+    "@tsconfig/node22": "^22.0.5",
     "@types/jsdom": "^21.1.1",
-    "@types/node": "^18.16.17",
+    "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vicons/antd": "^0.12.0",
